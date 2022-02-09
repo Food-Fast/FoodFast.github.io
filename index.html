@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>Food Fast</title>
-    <style>
-</style>
+    <meta charset="utf-8">
+    <title>Food Fast Restaurant</title>
   </head>
+  <style>
+    h1
+{text-align: center;}
+h2
+{text-align: center;}
+h3
+{text-align: center;}
+button
+{text-align: center;}
+p
+{text-align: center; font-size: large;}
+body
+  {background-color:white;}
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  .tab button.active {
+    background-color: #ccc;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+.cool{float: right;}
+.col{float: left;}
+table, th, td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption{text-align: center;}
+h4{text-align: center;}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+.nice {
+  text-align: center;
+  list-style-position: inside;
+}
+.po{font-size: small; color: red;}
+</style>
+
+
+  <script>function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}</script>
   <body>
-    <h>Food Fast Restaurant</h>
-</body></html>
+<h1>Food Fast Restaurant</h1>
+<p><img src="https://recipefairy.com/wp-content/uploads/2020/08/whopper-burger.jpg" width="150" class="center"> <img src="https://protectivediet.com/wp-content/uploads/2014/02/Oven-Fries1.jpg" width="265"></p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Elements and Compounds')">Menu</button>
+  <button class="tablinks" onclick="openCity(event, 'Periodic Table')">Contact Info</button>
+</div>
+<div id="Home" class="tabcontent">
+  <u><h2>Food Fast Restaurant</h2></u>
+  <p><img src="https://cdn.nanalyze.com/uploads/2017/05/Burger-Future-Teaser.jpg" width="500"></p>
+  <p>"The only place to get your food fast"</p>
+</div>
+
+<div id="Elements and Compounds" class="tabcontent">
+  <u><h2>菜 Food</h2></u>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/NFCMgKW/g.png" alt="g" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/MNThvJd/f.png" alt="f" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/sySF0BV/e.png" alt="e" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/MVPptm2/d.png" alt="d" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/xjy705G/c.png" alt="c" border="0"></a>
+  <p> 三明治 Sandwhich $2 ~ 薯片 Chips $1 ~ 萨拉 Salad $1 ~ 薯条 Fries $1 ~ 热狗 Hot Dog $2 </p>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/Y7JcXc4/b.png" alt="b" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/SQpZcTZ/a.png" alt="a" border="0"></a>
+  <p> 汉堡 Hamburger $1 ~ 芝士 Cheese $1 </p>
+  <u><h2>饮料 Drinks</h2></u>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/bKvqsVh/l.png" alt="l" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/xqzcShh/k.png" alt="k" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/19tpczz/j.png" alt="j" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/stLBVvC/i.png" alt="i" border="0"></a>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/P9vVgbQ/h.png" alt="h" border="0"></a>
+  <p> 咖啡 Coffee $1 ~ 果汁 Juice $1 ~ 汽水 Soda $1 ~ 茶 Tea $1 ~ 水 Water 50 cents</p>
+</div>
+<div id="Periodic Table" class="tabcontent">
+  <u><h2>Contact Info</h2></u>
+  <p>电话号码 Phone Number: 954-609-4020</p>
+  <p>E-mail: Food.Fast.U@gmail.com</p>
+  <p>地址: 69420 Crack Ave, Los Angeles, Fl</p>
+</div>
+  </body>
+</html>
